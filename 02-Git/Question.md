@@ -24,6 +24,32 @@
 
 &nbsp;
 
+### Github
+
+1. What is git
+2. WHat are the features of github
+
+&nbsp;
+
+&nbsp;
+
+# Repository
+
+1. What is repository
+2. What are the Types of Repositories
+3. How to create a repository
+4. How to initialize a repo
+5. How many ties we need to use `git init` command in a project
+6. What will happen after running `git init` command
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 &nbsp;
 
 &nbsp;

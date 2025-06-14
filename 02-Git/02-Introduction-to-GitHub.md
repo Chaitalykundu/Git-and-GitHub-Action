@@ -6,7 +6,7 @@
 - [How GitHub Works](#how-github-works)
 - [Core Concepts](#core-concepts)
 - [GitHub Accounts and Access](#github-accounts-and-access)
-- [Bonus Features on GitHub](#bonus-features-on-github)
+- [Features on GitHub](#features-on-github)
 
 &nbsp;
 
@@ -76,7 +76,7 @@ Other developers can collaborate, suggest changes, report issues, and contribute
 
 &nbsp;
 
-# Bonus Features on GitHub
+# Features on GitHub
 
 - ⭐ **Stars**: Show appreciation or bookmark a repo
 - 👀 **Watch**: Get notifications about repo updates
