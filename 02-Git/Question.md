@@ -46,13 +46,35 @@
 
 &nbsp;
 
-&nbsp;
+# Status
+
+1. How to check status of a repo
+2. What are the Purpose of `git status` command
+3. How to check short status
+4. Why do we Use short status
 
 &nbsp;
 
 &nbsp;
 
+# Staging
+
+1. What is staging
+2. What are the States of files
+3. What are Staged files
+4. What is Staging Area
+5. Why do we Use Staging
+
 &nbsp;
+
+&nbsp;
+
+# Commit
+
+1. What is commit
+2. Which is consider as change point
+3. Is it necessary to pass a commit message
+4. Which command automatically stage every changed
 
 &nbsp;
 

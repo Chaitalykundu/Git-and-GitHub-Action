@@ -1,3 +1,18 @@
+# Overview
+
+- [Overview](#overview)
+  - [Set User Name](#set-user-name)
+  - [Set User Email I'D](#set-user-email-id)
+  - [Set the default Editor](#set-the-default-editor)
+  - [Set initial branch](#set-initial-branch)
+  - [Check the setting](#check-the-setting)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 Get and set configuration variables that controls all facets of how git looks and operates
 
 &nbsp;

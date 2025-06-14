@@ -1,3 +1,35 @@
+# Overview
+
+- [Overview](#overview)
+- [Check git version](#check-git-version)
+- [Set User Name \& User Email](#set-user-name--user-email)
+- [Set the default Editor](#set-the-default-editor)
+- [Set initial branch](#set-initial-branch)
+- [Check config setting](#check-config-setting)
+- [Creating Git Folder](#creating-git-folder)
+- [Go to the folder](#go-to-the-folder)
+- [Initialize git repository](#initialize-git-repository)
+- [Check lists of directory / files](#check-lists-of-directory--files)
+- [Check lists of all directory / files (also hidden)](#check-lists-of-all-directory--files-also-hidden)
+- [See status](#see-status)
+- [Staging files](#staging-files)
+- [Committing the staged files](#committing-the-staged-files)
+- [Skipping the staging area](#skipping-the-staging-area)
+- [Removing files](#removing-files)
+- [Renaming or moving file](#renaming-or-moving-file)
+- [Viewing the staged/unstaged changes](#viewing-the-stagedunstaged-changes)
+- [Viewing the history](#viewing-the-history)
+- [Viewing a commit](#viewing-a-commit)
+- [Unstaging files (undoing git add)](#unstaging-files-undoing-git-add)
+- [Discarding local changes](#discarding-local-changes)
+- [Restoring an earlier version of a file](#restoring-an-earlier-version-of-a-file)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 # Check git version
 
 ```bash
@@ -160,6 +192,18 @@ Stage the current directory & all its files
 
 ```bash
  git add .
+```
+
+or
+
+```bash
+git add --all
+```
+
+or
+
+```bash
+ git add -a
 ```
 
 &nbsp;

@@ -2,10 +2,10 @@
 
 | ✅ Task                         | Description                                     | Status |
 | ------------------------------- | ----------------------------------------------- | ------ |
-| 🔹 **1. Install Git**           | Install Git on your system                      | ☐      |
-| 🔹 **2. Configure Git**         | Set name & email using `git config`             | ☐      |
-| 🔹 **3. Create Project Folder** | Create folder with `index.html`, `style.css`    | ☐      |
-| 🔹 **4. Initialize Git**        | Run `git init` inside project folder            | ☐      |
+| 🔹 **1. Install Git**           | Install Git on your system                      | ☑️     |
+| 🔹 **2. Configure Git**         | Set name & email using `git config`             | ☑️     |
+| 🔹 **3. Create Project Folder** | Create folder with `index.html`, `style.css`    | ☑️     |
+| 🔹 **4. Initialize Git**        | Run `git init` inside project folder            | ☑️     |
 | 🔹 **5. Stage Files**           | Add files using `git add .`                     | ☐      |
 | 🔹 **6. First Commit**          | Run `git commit -m "Initial commit"`            | ☐      |
 | 🔹 **7. Create GitHub Repo**    | Create a new repo on GitHub                     | ☐      |

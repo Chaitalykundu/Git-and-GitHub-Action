@@ -5,10 +5,16 @@
 - [Commit](#commit)
   - [Note](#note)
 - [Syntax](#syntax)
+- [Commit Message Tips](#commit-message-tips)
 - [Git Commit without Stage](#git-commit-without-stage)
 - [Git Commit Log](#git-commit-log)
+- [Common Git Commit Commands](#common-git-commit-commands)
+- [Important Notes](#important-notes)
 - [Atomic commit](#atomic-commit)
   - [Meaning of unit of work](#meaning-of-unit-of-work)
+  - [It should:](#it-should)
+  - [Why Use Atomic Commits?](#why-use-atomic-commits)
+  - [Example of Atomic commits:](#example-of-atomic-commits)
 - [Git snapshot](#git-snapshot)
 - [Musketeers of Git](#musketeers-of-git)
   - [Commit Object](#commit-object)
@@ -36,6 +42,10 @@
 
 # Commit
 
+A commit in Git is like a **snapshot** of your project at a particular moment in time.
+
+&nbsp;
+
 Since we have finished our work, we are ready move from `stage` to `commit` for our repo.
 
 Adding commits keep track of our progress and changes as we work.
@@ -58,8 +68,18 @@ By adding clear messages to each commit, it is easy for yourself (and others) to
 # Syntax
 
 ```bash
-git bash -m "COMMIT-MESSAGE"
+git commit -m "COMMIT-MESSAGE"
 ```
+
+&nbsp;
+
+&nbsp;
+
+# Commit Message Tips
+
+- Always write clear, descriptive messages.
+- **Use the present tense**: "Fix bug" instead of "Fixed bug"
+- **Start with a verb**: "Add", "Fix", "Remove", "Update" etc.
 
 &nbsp;
 
@@ -99,9 +119,47 @@ Summary
 
 &nbsp;
 
+# Common Git Commit Commands
+
+| Command                      | Purpose                                          |
+| ---------------------------- | ------------------------------------------------ |
+| `git commit -m "message"`    | Commit staged changes with message               |
+| `git commit -a -m "message"` | Add **and** commit tracked files (skips staging) |
+| `git commit --amend`         | Change the message of the **last commit**        |
+| `git log`                    | View commit history                              |
+| `git show <commit-id>`       | See details of a specific commit                 |
+
+&nbsp;
+
+&nbsp;
+
+# Important Notes
+
+If you try `git commit` without staging, Git will say:
+
+```bash
+"nothing to commit, working tree clean"
+```
+
+&nbsp;
+
+You can undo the last commit (safely) using:
+
+```bash
+git reset --soft HEAD~1
+```
+
+&nbsp;
+
+&nbsp;
+
 # Atomic commit
 
 An atomic commit is a commit that contains a single, complete, and coherent unit of work.
+
+&nbsp;
+
+In atomic commit, a commit should contain only one logical change.”
 
 It should be able to stand on its own, without depending on or affecting other commits. It should also have a clear and descriptive message that summarizes the changes made.
 
@@ -110,6 +168,44 @@ It should be able to stand on its own, without depending on or affecting other c
 Here **unit of work** varies from person to person.
 
 For example, if we are creating a webpage. To someone, unit of work may be creating only header. To someone unit of work may be creating some section. To someone, unit of work may be styling the font only and so on.
+
+&nbsp;
+
+&nbsp;
+
+## It should:
+
+- Do one thing only (fix one bug, add one feature, etc.)
+- Be small and focused
+- Be easily understandable
+
+&nbsp;
+
+&nbsp;
+
+## Why Use Atomic Commits?
+
+| Benefit                 | Explanation                                                       |
+| ----------------------- | ----------------------------------------------------------------- |
+| 🧠 **Clarity**          | Easy to understand what changed and why                           |
+| 🔁 **Easier rollbacks** | You can revert a specific feature or fix without affecting others |
+| 🔍 **Code review**      | Easier for reviewers to focus on a single concern                 |
+| 📜 **Clean history**    | Makes your Git log readable and meaningful                        |
+| ⚙️ **CI/CD Friendly**   | Pinpoint failures in automated pipelines faster                   |
+
+&nbsp;
+
+&nbsp;
+
+## Example of Atomic commits:
+
+```bash
+git commit -m "Fix: correct typo in login error message"
+
+git commit -m "Refactor: extract signup logic to new function"
+
+git commit -m "Update: footer alignment in mobile view"
+```
 
 &nbsp;
 

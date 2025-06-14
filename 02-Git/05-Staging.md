@@ -1,14 +1,13 @@
 # Overview
 
 - [Overview](#overview)
-- [Git Status](#git-status)
-  - [full status](#full-status)
-  - [Short status](#short-status)
+- [Staging](#staging)
 - [States of files](#states-of-files)
 - [Git Staging Environment](#git-staging-environment)
-  - [To stage **any particular file**, we use the following command](#to-stage-any-particular-file-we-use-the-following-command)
-  - [To stage **more than one file**, we use the following command](#to-stage-more-than-one-file-we-use-the-following-command)
-  - [To stage **all changed files**, we use the following command](#to-stage-all-changed-files-we-use-the-following-command)
+- [Commands](#commands)
+  - [Stage **any particular file**](#stage-any-particular-file)
+  - [Stage **more than one file**](#stage-more-than-one-file)
+- [Why Use Staging?](#why-use-staging)
 
 &nbsp;
 
@@ -16,23 +15,9 @@
 
 &nbsp;
 
-# Git Status
+# Staging
 
-We can check the **status** of any file using the following command
-
-### full status
-
-```bash
- git status
-```
-
-&nbsp;
-
-### Short status
-
-```bash
- git status -s
-```
+Staging is the step where you prepare your changes before saving them to the repository with a commit.
 
 &nbsp;
 
@@ -62,13 +47,21 @@ As we are working, we may be adding, editing and removing files. But whenever we
 
 **_Staged files are files that are ready to be committed to the repository we are working on._**
 
+**_Staging area is Where you prepare files before commit_**
+
 &nbsp;
 
 <img src="./assets/git workflow.png">
 
 &nbsp;
 
-### To stage **any particular file**, we use the following command
+&nbsp;
+
+&nbsp;
+
+# Commands
+
+## Stage **any particular file**
 
 ```bash
 git add FILENAME
@@ -76,7 +69,7 @@ git add FILENAME
 
 &nbsp;
 
-### To stage **more than one file**, we use the following command
+## Stage **more than one file**
 
 ```bash
 git add FILENAME1, FILENAME2, FILENAME3
@@ -84,7 +77,7 @@ git add FILENAME1, FILENAME2, FILENAME3
 
 &nbsp;
 
-### To stage **all changed files**, we use the following command
+##S tage **all changed files**
 
 ```bash
 git add .
@@ -101,5 +94,21 @@ or
 ```bash
 git add -a
 ```
+
+&nbsp;
+
+&nbsp;
+
+# Why Use Staging?
+
+- **Control**: You can stage only some files/lines.
+- **Review**: Double-check before committing.
+- **Partial commits**: Commit parts of a file (e.g., using git add -p).
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
