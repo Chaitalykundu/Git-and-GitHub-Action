@@ -1,15 +1,23 @@
-# Git
+# Learning material
 
-# Topics
+git roadmap: <https://roadmap.sh/git-github>
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+# Git
 
 | Topic               | Status |
 | ------------------- | ------ |
-| VCS                 |        |
-| Git and Github      |        |
+| VCS                 | Done   |
+| Git and Github      | Done   |
 | clone               |        |
-| pull and fetch      |        |
 | commit              |        |
 | log                 |        |
+| pull and fetch      |        |
 | push                |        |
 | reset               |        |
 | restore             |        |

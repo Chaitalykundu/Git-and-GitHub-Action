@@ -19,7 +19,7 @@ No, Git and Git Bash are not the same, but they are closely related.
 
 &nbsp;
 
-# Example:
+# Example
 
 **Git installed only** → You can use Git via Windows CMD or PowerShell.
 

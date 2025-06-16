@@ -506,6 +506,17 @@ Removes all untracked files
 &nbsp;
 &nbsp;
 &nbsp;
+
+| Term              | Description                         |
+| ----------------- | ----------------------------------- |
+| Working Directory | Where you write code                |
+| Staging Area      | Where you prepare commits           |
+| Local Repository  | Your local Git history              |
+| Remote Repository | GitHub/GitLab, where code is shared |
+| Commit            | A snapshot of your code             |
+| Push              | Upload your work to GitHub          |
+| Pull              | Get others' changes from GitHub     |
+
 &nbsp;
 &nbsp;
 &nbsp;

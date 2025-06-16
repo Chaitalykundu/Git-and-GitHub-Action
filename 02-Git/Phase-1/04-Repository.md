@@ -91,7 +91,7 @@ git init
 
 &nbsp;
 
-# Remote (on GitHub):
+# Remote (on GitHub)
 
 - Go to `https://github.com`
 - Click on “New repository”

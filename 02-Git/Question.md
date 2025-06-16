@@ -64,6 +64,7 @@
 3. What are Staged files
 4. What is Staging Area
 5. Why do we Use Staging
+6. What is git workflow
 
 &nbsp;
 
@@ -75,6 +76,29 @@
 2. Which is consider as change point
 3. Is it necessary to pass a commit message
 4. Which command automatically stage every changed
+5. What is Git snapshot
+6. How do Git Snapshots Work
+
+&nbsp;
+
+&nbsp;
+
+# Atomic Commit
+
+1. What is Atomic Commit
+2. Why do we Use Atomic Commits
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 

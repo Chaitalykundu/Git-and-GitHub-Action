@@ -10,12 +10,9 @@
 - [Git Commit Log](#git-commit-log)
 - [Common Git Commit Commands](#common-git-commit-commands)
 - [Important Notes](#important-notes)
-- [Atomic commit](#atomic-commit)
-  - [Meaning of unit of work](#meaning-of-unit-of-work)
-  - [It should:](#it-should)
-  - [Why Use Atomic Commits?](#why-use-atomic-commits)
-  - [Example of Atomic commits:](#example-of-atomic-commits)
 - [Git snapshot](#git-snapshot)
+  - [Git Workflow with Snapshots](#git-workflow-with-snapshots)
+  - [How Git Snapshots Work](#how-git-snapshots-work)
 - [Musketeers of Git](#musketeers-of-git)
   - [Commit Object](#commit-object)
   - [Tree Object](#tree-object)
@@ -153,75 +150,42 @@ git reset --soft HEAD~1
 
 &nbsp;
 
-# Atomic commit
-
-An atomic commit is a commit that contains a single, complete, and coherent unit of work.
-
-&nbsp;
-
-In atomic commit, a commit should contain only one logical change.”
-
-It should be able to stand on its own, without depending on or affecting other commits. It should also have a clear and descriptive message that summarizes the changes made.
-
-### Meaning of unit of work
-
-Here **unit of work** varies from person to person.
-
-For example, if we are creating a webpage. To someone, unit of work may be creating only header. To someone unit of work may be creating some section. To someone, unit of work may be styling the font only and so on.
-
-&nbsp;
-
-&nbsp;
-
-## It should:
-
-- Do one thing only (fix one bug, add one feature, etc.)
-- Be small and focused
-- Be easily understandable
-
-&nbsp;
-
-&nbsp;
-
-## Why Use Atomic Commits?
-
-| Benefit                 | Explanation                                                       |
-| ----------------------- | ----------------------------------------------------------------- |
-| 🧠 **Clarity**          | Easy to understand what changed and why                           |
-| 🔁 **Easier rollbacks** | You can revert a specific feature or fix without affecting others |
-| 🔍 **Code review**      | Easier for reviewers to focus on a single concern                 |
-| 📜 **Clean history**    | Makes your Git log readable and meaningful                        |
-| ⚙️ **CI/CD Friendly**   | Pinpoint failures in automated pipelines faster                   |
-
-&nbsp;
-
-&nbsp;
-
-## Example of Atomic commits:
-
-```bash
-git commit -m "Fix: correct typo in login error message"
-
-git commit -m "Refactor: extract signup logic to new function"
-
-git commit -m "Update: footer alignment in mobile view"
-```
-
-&nbsp;
-
-&nbsp;
-
 # Git snapshot
 
 A git snapshot is a specific point in time in the history of code.
 
 It represents a specific version of code, including all files and folders that were present at that time.
 
-Each snapshot is identified by a unique hash code.
+&nbsp;
 
-Everything is stored as an object and each object is identified by a unique hash code.
+When you commit in Git, you’re actually saving a snapshot of the files that are staged — not just a list of changes.
+
+&nbsp;
+
+Each snapshot is stored as an **object** and each object is identified by a **unique hash code**.
 
 Every hash (commit) depends on it's previous commit
+
+&nbsp;
+
+&nbsp;
+
+## Git Workflow with Snapshots
+
+```pgsql
+Working Directory → Staging Area → Repository
+                    (Snapshot Prepared)     (Snapshot Saved with Commit)
+```
+
+&nbsp;
+
+&nbsp;
+
+## How Git Snapshots Work
+
+Unlike other version control systems (like SVN) that store differences (deltas) between file versions, Git stores the full content of files (as blobs) as snapshots.
+
+If a file hasn't changed since the last snapshot, Git simply links to the previous version instead of storing it again (which saves space).
 
 &nbsp;
 
@@ -299,3 +263,7 @@ This is the place where the file content is stored.
 &nbsp;
 
 &nbsp;
+
+```
+
+```
