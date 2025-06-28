@@ -19,7 +19,7 @@
 
 | Step | Topic           | Commands / Concepts                           | Goal                               | Status |
 | ---- | --------------- | --------------------------------------------- | ---------------------------------- | ------ |
-| 9️⃣   | Ignore files    | `.gitignore`                                  | Prevent tracking unwanted files    |
+| 9️⃣   | Ignore files    | `.gitignore`                                  | Prevent tracking unwanted files    | Done   |
 | 🔟   | Branching       | `git branch`, `git switch`, `git checkout`    | Work on features separately        |
 | 1️⃣1️⃣ | Merging         | `git merge`                                   | Combine feature branches into main |
 | 1️⃣2️⃣ | Merge conflicts | Manual resolve + `git status`                 | Handle file conflicts              |
